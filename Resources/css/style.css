@@ -1,0 +1,271 @@
+body {
+    color: #000;
+    margin: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-weight: lighter;
+}
+
+nav {
+    background-color: #fff;
+    padding: 16px 24px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.nav-itme {
+    height: 32px;
+}
+
+nav div {
+    margin-right: 16px;
+    display: inline-block;
+}
+
+nav div:last-child {
+    margin-right: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 32px 24px;
+}
+
+.container-left, .container-item-right {
+    display: inline-block;
+}
+
+.container-left {
+    width: 60%;
+}
+
+
+.container-left img {
+    width: 100%;
+}
+
+.container-right {
+    width: 40%;
+    text-align: left;
+    margin-top: -16px;
+}
+
+.container-right > div:not(.container-title) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px 24px;
+    padding: 16px;
+}
+
+.container-right button {
+    width: 80%;
+    padding: 16px 0px;
+    background-color:#404040;
+    border: none;
+    color: #fff;
+
+}
+
+.container-title {
+    font-size:41px;
+    font-weight: bold;
+}
+
+.container-title-small {
+    font-size: 16px;
+    font-weight: bold;
+    color: #404040;;
+}
+
+.container-inline {
+    width: auto;
+    display: inline-block;
+    margin-left: 24px;
+}
+
+.container.learning {
+    padding: 32px;
+    background-color: #ccc;
+}
+
+.learning .text-center {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container.thesis {
+    padding: 32px 24px;
+}
+
+.push-right {
+    float: right;
+}
+
+.push-left {
+    float: left;
+}
+
+.banner {
+    background-color: #ccc;
+    color: 	#505050;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.img-container img{
+    width:100%;
+}
+
+.img-container-small {
+    width: 35%;
+    display: inline-block;
+}
+
+.img-container-small img {
+    width: 100%;
+}
+
+.inline-flex-column {
+    display: inline-flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inline-flex-column > * {
+    align-self: flex-start;
+    margin-left: 24px;
+}
+
+.imgs-container-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 32px 28px;
+}
+
+.imgs-container-grid .grid-item {
+    flex-basis: 30%;
+    margin: 16px;
+    text-align: left;
+    background-color: #fff;
+}
+
+.grid-item-text {
+    padding: 16px;
+}
+.text-center {
+    text-align: center;
+}
+
+.gray-bg {
+    background-color: #ccc;
+}
+
+footer {
+    border-top: solid 1px #000;
+    padding: 16px 24px;
+}
+
+footer div {
+    display: inline;
+}
+
+.orientation-day {
+    background-image: url()
+}
+
+.hidden-desktop {
+    display: none;
+}
+  
+/* .hidden-mobile {
+    display: block;
+} */
+
+@media screen and (max-width: 985px) {
+    .hidden-desktop {
+        display: block;
+    }
+    
+    .hidden-mobile {
+        display: none;
+    }
+    .container-left , .container-right {
+        width: 100%;
+        padding: 32px 16px;
+    }
+
+    .container-right > div, .container-right > div > * {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 24px;
+        padding: 0;
+    }
+
+    .imgs-container-grid .grid-item {
+        flex-basis: 100%;
+        background-color: lightgray;
+        padding: 24px 16px;
+        margin: 8px;
+    }
+
+    .grid-item-text *:not(.title) {
+        display: none;
+    }
+
+    .imgs-container-grid {
+        padding: 32px 0px;
+    }
+
+    .inline-flex-column * {
+        align-self: flex-start;
+        margin: 24px 0px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-item a {
+        display: none;
+    }
+
+    .nav-left {
+        width: 23%;
+    }
+
+    .nav-right {
+        width: 70%;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    
+    .container-right > div:not(.container-title) {
+        padding: 0;
+        margin: 0;
+    }
+
+    .grid-item-text {
+        padding: 0;
+    }
+}
